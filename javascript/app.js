@@ -3,7 +3,7 @@ var m_stats;
 var m_audio_analyzer;
 var m_renderer;
 
-var m_sphere;
+var m_mesh;
 var m_render_queue;
 
 var init = function() {
@@ -15,11 +15,11 @@ var init = function() {
 	m_ctrl =  new Control(m_audio_analyzer);
 	m_stats = new Statistics();
 
-	m_sphere = new Sphere(m_renderer, m_audio_analyzer);
+	m_mesh = new Mesh(m_renderer, m_audio_analyzer);
 
 	// setup render queue
     m_render_queue = [
-    	m_sphere.update.bind(m_sphere)
+    	m_mesh.update.bind(m_mesh)
     ];
 
 }

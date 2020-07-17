@@ -38,8 +38,9 @@ AudioAnalyzer.prototype.init = function(gain, _stream) {
 
     this.analyzer = _ctx.createAnalyser();
     this.analyzer.fftSize = 256;
-    this.buffer_length = this.analyzer.frequencyBinCount;
-    this.audio_buffer = new Uint8Array(this.buffer_length);
+    this.fftSize = 256;
+    this.buffer_length = this.analyzer.frequencyBinCount; // frequency bin count
+    this.audio_buffer = new Uint8Array(this.buffer_length); // audio buffer
 
     this.gain = _ctx.createGain();
 
@@ -88,17 +89,20 @@ AudioAnalyzer.prototype.update = function() {
         }
 
         // normalize _bass, _mid, _high
-        let _sum = _bass + _mid + _high;
-
-        _bass = _bass / _sum;
-        _mid = _mid / _sum;
-        _high = _high / _sum;
+        _bass = _bass / _bin_split;
+        _mid = _mid / _bin_split;
+        _high = _high / _bin_split;
 
         console.log(_bass, _mid, _high);
 
-        this.bass = _bass;
-        this.mid = _mid;
-        this.high = _high;
+        this.bass = this.bass > _bass ? this.bass * .96 : _bass;
+        this.mid = this.mid > _mid ? this.mid * .96 : _mid;
+        this.high = this.high > _high ? this.high * .96 : _high;
+
+        this.bass = Math.max(Math.min(this.bass, 1.), 0.);
+        this.mid = Math.max(Math.min(this.mid, 1.), 0.);
+        this.high = Math.max(Math.min(this.high, 1.), 0.);
+
         this.level = (this.bass + this.mid + this.high) / 3.;
     }
 }
