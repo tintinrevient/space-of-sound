@@ -7,3 +7,4 @@
 * http://support.moonpoint.com/os/os-x/dhcp-info.php
 * https://www.raspberrypi.org/documentation/installation/installing-images/mac.md
 * https://www.raspberrypi.org/documentation/configuration/raspi-config.md
+* https://raspberrypi.stackexchange.com/questions/381/how-do-i-turn-off-my-raspberry-pi
