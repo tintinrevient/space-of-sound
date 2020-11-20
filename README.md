@@ -9,3 +9,4 @@
 * https://www.raspberrypi.org/documentation/configuration/raspi-config.md
 * https://raspberrypi.stackexchange.com/questions/381/how-do-i-turn-off-my-raspberry-pi
 * https://sourceforge.net/p/raspberry-gpio-python/wiki/BasicUsage/
+* https://raspi.tv/2013/rpi-gpio-0-5-2a-now-has-software-pwm-how-to-use-it
