@@ -12,3 +12,4 @@
 * https://raspi.tv/2013/rpi-gpio-0-5-2a-now-has-software-pwm-how-to-use-it
 * http://www.learningaboutelectronics.com/Articles/Double-pole-single-throw-switch-DPST
 * https://superuser.com/questions/326211/best-way-to-transfer-files-over-a-lan-between-two-linux-computers
+* https://www.electronics-tutorials.ws/dccircuits/voltage-divider.html
