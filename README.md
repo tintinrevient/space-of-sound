@@ -13,3 +13,4 @@
 * http://www.learningaboutelectronics.com/Articles/Double-pole-single-throw-switch-DPST
 * https://superuser.com/questions/326211/best-way-to-transfer-files-over-a-lan-between-two-linux-computers
 * https://www.electronics-tutorials.ws/dccircuits/voltage-divider.html
+* https://howchoo.com/g/ote0ywmzywj/how-to-enable-ssh-on-raspbian-without-a-screen
