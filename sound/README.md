@@ -14,3 +14,4 @@
 * https://ismir.net/resources/software-tools/
 * https://www.oxfordmusiconline.com/
 * https://web.stanford.edu/group/htgg/cgi-bin/drupal/
+* https://devhints.io/homebrew
