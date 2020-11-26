@@ -8,5 +8,6 @@
 * https://staff.aist.go.jp/m.goto/RWC-MDB/
 * http://www.piano-midi.de/
 * https://www.ismir2020.net/
+* https://ismir.net/resources/software-tools/
 * https://www.oxfordmusiconline.com/
 * https://web.stanford.edu/group/htgg/cgi-bin/drupal/
