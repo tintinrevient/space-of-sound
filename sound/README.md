@@ -16,3 +16,6 @@
 * https://web.stanford.edu/group/htgg/cgi-bin/drupal/
 * https://devhints.io/homebrew
 * https://github.com/IraKorshunova/folk-rnn
+* https://boblsturm.github.io/aimusic2020/
+* https://www.ismir2020.net/
+* https://gudgud96.github.io/2020/10/17/ismir_2020/
