@@ -15,3 +15,4 @@
 * https://www.oxfordmusiconline.com/
 * https://web.stanford.edu/group/htgg/cgi-bin/drupal/
 * https://devhints.io/homebrew
+* https://github.com/IraKorshunova/folk-rnn
