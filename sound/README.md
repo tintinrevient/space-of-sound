@@ -4,6 +4,8 @@
 * https://interactiveaudiolab.github.io/
 * https://pypi.org/project/miditk-smf/
 * https://pypi.org/project/py-midi/
+* https://ismir.net/resources/software-tools/
+* http://jmir.sourceforge.net/
 * https://github.com/librosa/librosa/
 * https://librosa.org/doc/latest/index.html
 * https://nbviewer.jupyter.org/gist/bmcfee/8632059
@@ -11,11 +13,9 @@
 * https://staff.aist.go.jp/m.goto/RWC-MDB/
 * http://www.piano-midi.de/
 * https://www.ismir2020.net/
-* https://ismir.net/resources/software-tools/
 * https://www.oxfordmusiconline.com/
 * https://web.stanford.edu/group/htgg/cgi-bin/drupal/
 * https://devhints.io/homebrew
 * https://github.com/IraKorshunova/folk-rnn
 * https://boblsturm.github.io/aimusic2020/
-* https://www.ismir2020.net/
 * https://gudgud96.github.io/2020/10/17/ismir_2020/
