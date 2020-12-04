@@ -36,3 +36,4 @@
 * https://ddmal.music.mcgill.ca/research/The_McGill_Billboard_Project_(Chord_Analysis_Dataset)/
 * https://www.humdrum.org/
 * https://en.wikipedia.org/wiki/Music_in_psychological_operations
+* https://www.onlineconverter.com/midi-to-flac
