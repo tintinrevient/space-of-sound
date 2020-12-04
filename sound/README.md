@@ -37,3 +37,4 @@
 * https://www.humdrum.org/
 * https://en.wikipedia.org/wiki/Music_in_psychological_operations
 * https://www.onlineconverter.com/midi-to-flac
+* https://en.wikipedia.org/wiki/Diegesis
