@@ -60,3 +60,4 @@
 * https://openai.com/blog/musenet/
 * https://openai.com/blog/jukebox/
 * https://magenta.tensorflow.org/
+* https://www.acs.psu.edu/drussell/demos/waves/wavemotion.html
