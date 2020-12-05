@@ -44,3 +44,4 @@
 * https://jonmccormack.info/
 * https://www.wired.co.uk/article/making-music-with-live-computer-code-
 * http://openmusictheory.com/
+* https://www.engadget.com/2007-03-08-midi-is-the-future-of-game-audio.html
