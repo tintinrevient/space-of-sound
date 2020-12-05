@@ -51,3 +51,8 @@
 * https://virtualpiano.net/
 * https://music.stanford.edu/
 * http://kern.ccarh.org/browse?l=beethoven/sonatas
+* http://extras.humdrum.org/man/keycor/
+* http://extras.humdrum.org/man/mkeyscape/
+* http://extras.humdrum.org/man/mkeyscape/beet-quartet/
+* https://ccrma.stanford.edu/~craig/keyscape/class/
+* https://ccrma.stanford.edu/~craig/keyscape/
