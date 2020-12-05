@@ -59,3 +59,4 @@
 * https://www.qmul.ac.uk/dmrn/dmrn15/
 * https://openai.com/blog/musenet/
 * https://openai.com/blog/jukebox/
+* https://magenta.tensorflow.org/
