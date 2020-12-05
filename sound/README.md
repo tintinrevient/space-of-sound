@@ -57,3 +57,5 @@
 * https://ccrma.stanford.edu/~craig/keyscape/class/
 * https://ccrma.stanford.edu/~craig/keyscape/
 * https://www.qmul.ac.uk/dmrn/dmrn15/
+* https://openai.com/blog/musenet/
+* https://openai.com/blog/jukebox/
