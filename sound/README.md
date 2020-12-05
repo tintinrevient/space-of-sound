@@ -44,6 +44,7 @@
 * https://jonmccormack.info/
 * https://www.wired.co.uk/article/making-music-with-live-computer-code-
 * http://openmusictheory.com/
+* http://openmusictheory.com/scales.html
 * https://www.engadget.com/2007-03-08-midi-is-the-future-of-game-audio.html
 * https://voces8.foundation/si-le-le-sheet-music
 * https://services.math.duke.edu/education/ccp/materials/postcalc/music/music2_4.html
