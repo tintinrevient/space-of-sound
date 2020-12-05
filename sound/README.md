@@ -39,3 +39,6 @@
 * https://en.wikipedia.org/wiki/Music_in_psychological_operations
 * https://www.onlineconverter.com/midi-to-flac
 * https://en.wikipedia.org/wiki/Diegesis
+* https://www.musiccognition.osu.edu/
+* https://shellyknotts.wordpress.com/
+* https://jonmccormack.info/
