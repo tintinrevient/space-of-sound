@@ -46,3 +46,4 @@
 * http://openmusictheory.com/
 * https://www.engadget.com/2007-03-08-midi-is-the-future-of-game-audio.html
 * https://voces8.foundation/si-le-le-sheet-music
+* https://services.math.duke.edu/education/ccp/materials/postcalc/music/music2_4.html
