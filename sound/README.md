@@ -12,7 +12,10 @@
 * https://github.com/MTG
 * https://staff.aist.go.jp/m.goto/RWC-MDB/
 * http://www.piano-midi.de/
+* http://ismir.net/resources/
 * https://www.ismir2020.net/
+* https://transactions.ismir.net/
+* https://transactions.ismir.net/collections/special/20th-anniversary-of-ismir/
 * https://www.oxfordmusiconline.com/
 * https://web.stanford.edu/group/htgg/cgi-bin/drupal/
 * https://devhints.io/homebrew
@@ -20,9 +23,7 @@
 * https://boblsturm.github.io/aimusic2020/
 * https://gudgud96.github.io/2020/10/17/ismir_2020/
 * https://dblp.uni-trier.de/db/conf/ismir/index.html
-* https://transactions.ismir.net/
 * https://www.music-ir.org/mirex/wiki/MIREX_HOME
-* http://ismir.net/resources/
 * http://millionsongdataset.com/
 * http://magnatune.com/
 * https://www.allmusic.nl/
