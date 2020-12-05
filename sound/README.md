@@ -42,3 +42,4 @@
 * https://www.musiccognition.osu.edu/
 * https://shellyknotts.wordpress.com/
 * https://jonmccormack.info/
+* https://www.wired.co.uk/article/making-music-with-live-computer-code-
