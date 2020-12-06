@@ -62,3 +62,4 @@
 * https://magenta.tensorflow.org/
 * https://www.acs.psu.edu/drussell/demos/waves/wavemotion.html
 * https://nii-yamagishilab.github.io/samples-nsf/neural-music.html
+* http://jmir.sourceforge.net/manuals/jSymbolic_manual/home.html
