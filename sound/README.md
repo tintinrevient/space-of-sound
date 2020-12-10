@@ -67,3 +67,4 @@
 * http://jmir.sourceforge.net/ACE.html
 * http://jmir.sourceforge.net/
 * https://mathworld.wolfram.com/WallpaperGroups.html
+* https://wiki.python.org/moin/PythonInMusic
