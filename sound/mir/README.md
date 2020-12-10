@@ -1,5 +1,7 @@
 # MIR
 
+## Questions
+
 Evaluating the AI-generated songs in a musical-Turing-test way has been carried out for a bunch of genres, such as (1) "DeepBach: a Steerable Model for Bach Chorales Generation"; (2) the case with Amper ([https://soundcloud.com/tarynsouthern/original-amper-file-second-chance/s-k6kga](https://soundcloud.com/tarynsouthern/original-amper-file-second-chance/s-k6kga) and [https://www.youtube.com/watch?v=XUs6CznN8pw&feature=emb_title](https://www.youtube.com/watch?v=XUs6CznN8pw&feature=emb_title)).
 
 <p float="left">
@@ -15,6 +17,14 @@ The following figure shows that the evaluation of AI-composed music is highly co
 	<img src="./pix/ai_music.png" width=600 /> <br>
 	<em>The regression analysis of the relationship between the perception of creative AI and the evaluation of AI-composed music.</em>
 </p>
+
+## Todos
+
+- [ ] Smarter everyday Fourier series
+- [ ] Spectrogram
+- [ ] Key-scape
+- [ ] Scape plot
+- [ ] Inner metric analysis
 
 ## References
 * https://www.sonicvisualiser.org/
