@@ -13,3 +13,14 @@ The following figure shows that the evaluation of AI-composed music is highly co
 ![AI_Music](./pix/ai_music.png)
 
 The regression analysis of the relationship between the perception of creative AI and the evaluation of AI-composed music.
+
+## References
+* https://www.sonicvisualiser.org/
+* http://jmir.sourceforge.net/manuals/jSymbolic_manual/home.html
+* https://github.com/dmcennis/jaudioGIT
+* http://jmir.sourceforge.net/ACE.html
+* http://jmir.sourceforge.net/
+* https://mathworld.wolfram.com/WallpaperGroups.html
+* https://wiki.python.org/moin/PythonInMusic
+* https://ccrma.stanford.edu/~craig/keyscape/class/
+* https://ccrma.stanford.edu/~craig/keyscape/
