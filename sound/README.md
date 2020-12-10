@@ -54,17 +54,9 @@
 * http://extras.humdrum.org/man/keycor/
 * http://extras.humdrum.org/man/mkeyscape/
 * http://extras.humdrum.org/man/mkeyscape/beet-quartet/
-* https://ccrma.stanford.edu/~craig/keyscape/class/
-* https://ccrma.stanford.edu/~craig/keyscape/
 * https://www.qmul.ac.uk/dmrn/dmrn15/
 * https://openai.com/blog/musenet/
 * https://openai.com/blog/jukebox/
 * https://magenta.tensorflow.org/
 * https://www.acs.psu.edu/drussell/demos/waves/wavemotion.html
 * https://nii-yamagishilab.github.io/samples-nsf/neural-music.html
-* http://jmir.sourceforge.net/manuals/jSymbolic_manual/home.html
-* https://github.com/dmcennis/jaudioGIT
-* http://jmir.sourceforge.net/ACE.html
-* http://jmir.sourceforge.net/
-* https://mathworld.wolfram.com/WallpaperGroups.html
-* https://wiki.python.org/moin/PythonInMusic
