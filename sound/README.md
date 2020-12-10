@@ -19,7 +19,6 @@
 * https://www.oxfordmusiconline.com/
 * https://web.stanford.edu/group/htgg/cgi-bin/drupal/
 * https://devhints.io/homebrew
-* https://github.com/IraKorshunova/folk-rnn
 * https://boblsturm.github.io/aimusic2020/
 * https://gudgud96.github.io/2020/10/17/ismir_2020/
 * https://dblp.uni-trier.de/db/conf/ismir/index.html
