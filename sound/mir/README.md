@@ -1,6 +1,6 @@
 # MIR
 
-Evaluating the AI-generated songs in a musical-Turing-test way has been carried out for a bunch of genres, such as (1) "DeepBach: a Steerable Model for Bach Chorales Generation", (2) the case with Amper ([https://soundcloud.com/tarynsouthern/original-amper-file-second-chance/s-k6kga](https://soundcloud.com/tarynsouthern/original-amper-file-second-chance/s-k6kga) and [https://www.youtube.com/watch?v=XUs6CznN8pw&feature=emb_title](https://www.youtube.com/watch?v=XUs6CznN8pw&feature=emb_title))
+Evaluating the AI-generated songs in a musical-Turing-test way has been carried out for a bunch of genres, such as (1) "DeepBach: a Steerable Model for Bach Chorales Generation"; (2) the case with Amper ([https://soundcloud.com/tarynsouthern/original-amper-file-second-chance/s-k6kga](https://soundcloud.com/tarynsouthern/original-amper-file-second-chance/s-k6kga) and [https://www.youtube.com/watch?v=XUs6CznN8pw&feature=emb_title](https://www.youtube.com/watch?v=XUs6CznN8pw&feature=emb_title)).
 
 <p float="left">
 	<img src="./pix/deep_bach.png" width=700 /> <br>
