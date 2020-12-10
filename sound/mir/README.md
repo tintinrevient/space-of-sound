@@ -36,3 +36,4 @@ The following figure shows that the evaluation of AI-composed music is highly co
 * https://wiki.python.org/moin/PythonInMusic
 * https://ccrma.stanford.edu/~craig/keyscape/class/
 * https://ccrma.stanford.edu/~craig/keyscape/
+* https://program.ismir2020.net/poster_1-17.html
