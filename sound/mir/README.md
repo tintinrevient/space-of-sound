@@ -41,3 +41,4 @@ The following figure shows that the evaluation of AI-composed music is highly co
 * http://people.csail.mit.edu/mrub/VisualMic/
 * http://people.csail.mit.edu/nwadhwa/phase-video/
 * https://www.audiolabs-erlangen.de/fau/professor/mueller/notebookFMP
+* https://juce.com/discover/stories/adc-2020
