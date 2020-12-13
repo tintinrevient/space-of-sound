@@ -109,6 +109,33 @@ zoom xon;
 	<img src="./pix/sine_wave_zoom.png" width=400 />
 </p>
 
+### Beating
+
+```
+duration = 4; % duration = 4 seconds
+fs = 8000;
+dt = 1/fs;
+
+f1 = 400;
+y1 = cos(2*pi*f1/fs*[0:fs*duration-1]);
+sound(y1, fs);
+
+f2 = 404;
+y2 = cos(2*pi*f2/fs*[0:fs*duration-1]);
+sound(y2, fs);
+
+y = y1+y2;
+sound(y, fs);
+
+figure;
+t = (0:dt:duration-dt)';
+plot(t, y);
+```
+
+<p float="left">
+	<img src="./pix/beating.png" width=400 />
+</p>
+
 ## References
 * https://www.sfu.ca/~truax/river.html
 * https://en.wikipedia.org/wiki/Chebyshev_polynomials
