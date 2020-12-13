@@ -67,5 +67,24 @@ end
 audiowrite('NSynthTryOutCompressor.wav', y, fs)
 ```
 
+### Chebychev polynomials of the 1st kind
+
+```
+[x, fs] = audioread('NSynthTryOut.wav'); % read wave file
+
+t1 = cos(x)
+t3 = 4*(t1.^3) - 3*t1
+t5 = 16*(t1.^5) - 20*(t1.^3) + 5*t1
+
+y1 = t1
+audiowrite('NSynthTryOutCos1.wav', y, fs)
+
+y3 = t1 + 1/3*t3
+audiowrite('NSynthTryOutCos3.wav', y, fs)
+
+y5 = t1 + 1/3*t3 + 1/5*t5
+audiowrite('NSynthTryOutCos5.wav', y, fs)
+```
+
 ## References
 * https://www.sfu.ca/~truax/river.html
