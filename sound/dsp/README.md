@@ -105,8 +105,8 @@ zoom xon;
 ```
 
 <p float="left">
-	<img src="sine_wave.png" width=350 />
-	<img src="sine_wave_zoom.png" width=350 />
+	<img src="./pix/sine_wave.png" width=350 />
+	<img src="./pix/sine_wave_zoom.png" width=350 />
 </p>
 
 ## References
