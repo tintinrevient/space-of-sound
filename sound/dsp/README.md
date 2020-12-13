@@ -68,3 +68,4 @@ audiowrite('NSynthTryOutCompressor.wav', y, fs)
 ```
 
 ## References
+* https://www.sfu.ca/~truax/river.html
