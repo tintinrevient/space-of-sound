@@ -112,3 +112,4 @@ zoom xon;
 ## References
 * https://www.sfu.ca/~truax/river.html
 * https://en.wikipedia.org/wiki/Chebyshev_polynomials
+* https://nl.mathworks.com/help/symbolic/chebyshevt.htm
