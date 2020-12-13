@@ -2,7 +2,7 @@
 
 ## Code snippet
 
-### Sin tone
+### Sine tone
 
 ```
 y = sin(2*pi*440/44100*[0:44099]);
@@ -84,6 +84,24 @@ audiowrite('NSynthTryOutCos3.wav', y3, fs);
 
 y5 = t1 + 1/3*t3 + 1/5*t5;
 audiowrite('NSynthTryOutCos5.wav', y5, fs);
+```
+
+### Sine wave plotting
+
+```
+[x, fs] = audioread('NSynthTryOut.wav'); % read wave file
+
+dt = 1/fs;
+startTime = 0; % seconds
+endTime = 2*60; % seconds
+
+t = (startTime:dt:endTime-dt)';
+
+figure;
+plot(t, x);
+xlabel('time (in seconds)');
+title('Signal versus Time');
+zoom xon;
 ```
 
 ## References
