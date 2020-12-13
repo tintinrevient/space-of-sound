@@ -88,3 +88,4 @@ audiowrite('NSynthTryOutCos5.wav', y5, fs);
 
 ## References
 * https://www.sfu.ca/~truax/river.html
+* https://en.wikipedia.org/wiki/Chebyshev_polynomials
