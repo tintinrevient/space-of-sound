@@ -136,6 +136,36 @@ plot(t, y);
 	<img src="./pix/beating.png" width=400 />
 </p>
 
+### Amplitude modulation
+
+```
+duration = 4; % duration = 4 seconds
+fs = 44100;
+dt = 1/fs;
+
+fc = 400;
+yc = cos(2*pi*fc/fs*[0:fs*duration-1]);
+sound(yc, fs);
+
+fm = 50;
+ym = cos(2*pi*fm/fs*[0:fs*duration-1]);
+sound(ym, fs);
+
+ac = 1;
+am = 1;
+y = yc.*(am*ym + ac);
+sound(y, fs);
+
+figure;
+t = (0:dt:duration-dt)';
+plot(t, y);
+zoom xon;
+```
+
+<p float="left">
+	<img src="./pix/amplitude_modulation.png" width=400 />
+</p>
+
 ## References
 * https://www.sfu.ca/~truax/river.html
 * https://en.wikipedia.org/wiki/Chebyshev_polynomials
