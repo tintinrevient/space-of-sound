@@ -67,14 +67,14 @@ end
 audiowrite('NSynthTryOutCompressor.wav', y, fs);
 ```
 
-### Chebychev polynomials of the 1st kind
+### Chebyshev polynomials of the 1st kind
 
 ```
 [x, fs] = audioread('NSynthTryOut.wav'); % read wave file
 
-t1 = cos(x);
-t3 = 4*(t1.^3) - 3*t1;
-t5 = 16*(t1.^5) - 20*(t1.^3) + 5*t1;
+t1 = x;
+t3 = 4*(x.^3) - 3*x;
+t5 = 16*(x.^5) - 20*(x.^3) + 5*x;
 
 y1 = t1;
 audiowrite('NSynthTryOutCos1.wav', y1, fs);
