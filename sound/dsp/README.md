@@ -104,6 +104,11 @@ title('Signal versus Time');
 zoom xon;
 ```
 
+<p float="left">
+	<img src="sine_wave.png" width=350 />
+	<img src="sine_wave_zoom.png" width=350 />
+</p>
+
 ## References
 * https://www.sfu.ca/~truax/river.html
 * https://en.wikipedia.org/wiki/Chebyshev_polynomials
