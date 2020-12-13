@@ -1,8 +1,8 @@
 # DSP
 
-## Code Snippet
+## Code snippet
 
-### Sin Tone
+### Sin tone
 
 ```
 y = sin(2*pi*440/44100*[0:44099])
@@ -10,7 +10,7 @@ y = sin(2*pi*440/44100*[0:44099])
 sound(y, 44100)
 ```
 
-### Amplitude Envolope and ADSR
+### Amplitude envolope and ADSR
 
 ```
 [x, fs] = audioread('NSynthTryOut.wav'); % read wave file
@@ -40,6 +40,31 @@ sound(upsample(x, 2), fs)
 
 % down-sampling
 sound(downsample(x, 2), fs)
+```
+
+### Dynamic compressor
+
+```
+[x, fs] = audioread('NSynthTryOut.wav'); % read wave file 
+
+theSign = sign(x); % retain sign of waveform
+x = abs(x); % get absolute value of x
+
+slope = 2;
+intercept = 1;
+threshold = 0.2;
+
+for i=1:length(x)
+  if x(i) > threshold
+    % compress
+    y(i) = (slope*x(i) + intercept)*theSign(i); 
+  else
+    % do not compress
+    y(i) = x(i)*theSign(i); 
+  end
+end
+
+audiowrite('NSynthTryOutCompressor.wav', y, fs)
 ```
 
 ## References
