@@ -5,9 +5,9 @@
 ### Sin tone
 
 ```
-y = sin(2*pi*440/44100*[0:44099])
+y = sin(2*pi*440/44100*[0:44099]);
 
-sound(y, 44100)
+sound(y, 44100);
 ```
 
 ### Amplitude envolope and ADSR
@@ -16,9 +16,9 @@ sound(y, 44100)
 [x, fs] = audioread('NSynthTryOut.wav'); % read wave file
 xReverse = flipud(x); % flip the array up -> down
 
-sound(xReverse, fs)
+sound(xReverse, fs);
 
-audiowrite('NSynthTryOutReverse.wav', xReverse, fs)
+audiowrite('NSynthTryOutReverse.wav', xReverse, fs);
 ```
 
 ### Window
@@ -36,10 +36,10 @@ sound(xWindowed, fs);
 [x, fs] = audioread('NSynthTryOut.wav'); % read wave file 
 
 % up-sampling
-sound(upsample(x, 2), fs)
+sound(upsample(x, 2), fs);
 
 % down-sampling
-sound(downsample(x, 2), fs)
+sound(downsample(x, 2), fs);
 ```
 
 ### Dynamic compressor
@@ -64,7 +64,7 @@ for i=1:length(x)
   end
 end
 
-audiowrite('NSynthTryOutCompressor.wav', y, fs)
+audiowrite('NSynthTryOutCompressor.wav', y, fs);
 ```
 
 ### Chebychev polynomials of the 1st kind
@@ -72,18 +72,18 @@ audiowrite('NSynthTryOutCompressor.wav', y, fs)
 ```
 [x, fs] = audioread('NSynthTryOut.wav'); % read wave file
 
-t1 = cos(x)
-t3 = 4*(t1.^3) - 3*t1
-t5 = 16*(t1.^5) - 20*(t1.^3) + 5*t1
+t1 = cos(x);
+t3 = 4*(t1.^3) - 3*t1;
+t5 = 16*(t1.^5) - 20*(t1.^3) + 5*t1;
 
-y1 = t1
-audiowrite('NSynthTryOutCos1.wav', y, fs)
+y1 = t1;
+audiowrite('NSynthTryOutCos1.wav', y, fs);
 
-y3 = t1 + 1/3*t3
-audiowrite('NSynthTryOutCos3.wav', y, fs)
+y3 = t1 + 1/3*t3;
+audiowrite('NSynthTryOutCos3.wav', y, fs);
 
-y5 = t1 + 1/3*t3 + 1/5*t5
-audiowrite('NSynthTryOutCos5.wav', y, fs)
+y5 = t1 + 1/3*t3 + 1/5*t5;
+audiowrite('NSynthTryOutCos5.wav', y, fs);
 ```
 
 ## References
