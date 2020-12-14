@@ -166,6 +166,35 @@ zoom xon;
 	<img src="./pix/amplitude_modulation.png" width=400 />
 </p>
 
+### Frequency modulation
+
+```
+duration = 4; % duration = 4 seconds
+fs = 8000;
+dt = 1/fs;
+
+fc = 400;
+yc = cos(2*pi*fc/fs*[0:fs*duration-1]);
+sound(yc, fs);
+
+ac = 1;
+am = 500; % delta of frequency swing
+fm = 50;
+
+y = ac*cos(2*pi*fc/fs*[0:fs*duration-1] + am/fm*sin(2*pi*fm/fs*[0:fs*duration-1]));
+sound(y, fs);
+
+figure;
+t = (0:dt:duration-dt)';
+plot(t, y);
+zoom xon;
+```
+
+<p float="left">
+	<img src="./pix/frequency_modulation_carrier.png" width=400 />
+	<img src="./pix/frequency_modulation_delta_f_500.png" width=400 />
+</p>
+
 ## References
 * https://www.sfu.ca/~truax/river.html
 * https://en.wikipedia.org/wiki/Chebyshev_polynomials
