@@ -195,6 +195,27 @@ zoom xon;
 	<img src="./pix/frequency_modulation_delta_f_500.png" width=400 />
 </p>
 
+### Twin peaks
+
+```
+[x, fs] = audioread('NSynthTryOut.wav'); % read wave file
+
+dt = 1/fs;
+duration = 15; % seconds
+
+xWindow = x(30*fs:(30+duration)*fs-dt);
+
+fm = 10;
+ym = cos(2*pi*fm/fs*[0:fs*duration-1]);
+
+ac = 1;
+am = 1;
+y = xWindow.*(am*ym + ac);
+
+sound(y, fs);
+audiowrite('NSynthTryOutTwinPeaks.wav', y, fs);
+```
+
 ## References
 * https://www.sfu.ca/~truax/river.html
 * https://en.wikipedia.org/wiki/Chebyshev_polynomials
