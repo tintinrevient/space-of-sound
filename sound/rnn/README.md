@@ -1,5 +1,11 @@
 # RNN
 
+## Sampling strategy
+
+<p float="left">
+    <img src="./pix/sampling_strategy.png" width=500>
+</p>
+
 ## References
 * https://github.com/IraKorshunova/folk-rnn
 * https://folkrnn.org/

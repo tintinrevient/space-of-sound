@@ -1,19 +1,18 @@
+import keras
+import numpy as np
 import os
 
-data_dir = 'data/folkrnn'
-fname = os.path.join(data_dir, 'data_v2')
+path = keras.utils.get_file('nietzsche.txt',
+                            origin='https://s3.amazonaws.com/text-datasets/nietzsche.txt')
 
-with open(fname) as fh:
-    data = fh.read()
-
-lines = data.split('\n')
-text = " ".join([lines[i+2] for i in range(0, len(lines), 4)])
+text = open(path).read().lower()
+print('Corpus length:', len(text))
 
 # Length of extracted character sequences
-maxlen = 5
+maxlen = 60
 
 # We sample a new sequence every `step` characters
-step = 2
+step = 3
 
 # This holds our extracted sequences
 sentences = []
@@ -33,8 +32,8 @@ print('Unique characters:', len(chars))
 # Dictionary mapping unique characters to their index in `chars`
 char_indices = dict((char, chars.index(char)) for char in chars)
 
+
 # Next, one-hot encode the characters into binary arrays.
-import numpy as np
 print('Vectorization...')
 x = np.zeros((len(sentences), maxlen, len(chars)), dtype=np.bool)
 y = np.zeros((len(sentences), len(chars)), dtype=np.bool)
@@ -44,7 +43,6 @@ for i, sentence in enumerate(sentences):
     y[i, char_indices[next_chars[i]]] = 1
 
 from keras import layers
-import keras
 
 model = keras.models.Sequential()
 model.add(layers.LSTM(128, input_shape=(maxlen, len(chars))))
@@ -89,7 +87,7 @@ for epoch in range(1, 60):
         sys.stdout.write(generated_text)
 
         # We generate 400 characters
-        for i in range(100):
+        for i in range(400):
 
             sampled = np.zeros((1, maxlen, len(chars)))
 
