@@ -3,7 +3,7 @@
 ## Sampling strategy
 
 <p float="left">
-    <img src="./pix/sampling_strategy.png" width=500>
+    <img src="./pix/sampling_strategy.png" width=800>
 </p>
 
 ## References
