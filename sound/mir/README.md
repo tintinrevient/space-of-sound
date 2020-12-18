@@ -45,3 +45,4 @@ The following figure shows that the evaluation of AI-composed music is highly co
 * https://audio.dev/
 * https://www.justinsalamon.com/melody-extraction.html
 * https://vamp-plugins.org/index.html
+* http://www.isophonics.net/nnls-chroma
