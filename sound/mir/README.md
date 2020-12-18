@@ -44,3 +44,4 @@ The following figure shows that the evaluation of AI-composed music is highly co
 * https://juce.com/discover/stories/adc-2020
 * https://audio.dev/
 * https://www.justinsalamon.com/melody-extraction.html
+* https://vamp-plugins.org/index.html
