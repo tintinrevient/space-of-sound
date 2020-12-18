@@ -28,8 +28,12 @@ The following figure shows that the evaluation of AI-composed music is highly co
 
 ## References
 * https://www.sonicvisualiser.org/
+* https://vamp-plugins.org/index.html
+* https://www.justinsalamon.com/melody-extraction.html
+* http://www.isophonics.net/nnls-chroma
 * http://jmir.sourceforge.net/manuals/jSymbolic_manual/home.html
 * https://github.com/dmcennis/jaudioGIT
+* http://jaudio.sourceforge.net/jaudio10/features/feature.html
 * http://jmir.sourceforge.net/ACE.html
 * http://jmir.sourceforge.net/
 * https://mathworld.wolfram.com/WallpaperGroups.html
@@ -43,6 +47,3 @@ The following figure shows that the evaluation of AI-composed music is highly co
 * https://www.audiolabs-erlangen.de/fau/professor/mueller/notebookFMP
 * https://juce.com/discover/stories/adc-2020
 * https://audio.dev/
-* https://www.justinsalamon.com/melody-extraction.html
-* https://vamp-plugins.org/index.html
-* http://www.isophonics.net/nnls-chroma
