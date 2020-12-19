@@ -47,3 +47,4 @@ The following figure shows that the evaluation of AI-composed music is highly co
 * https://www.audiolabs-erlangen.de/fau/professor/mueller/notebookFMP
 * https://juce.com/discover/stories/adc-2020
 * https://audio.dev/
+* https://mtg.github.io/JAAH/
