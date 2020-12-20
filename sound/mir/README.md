@@ -49,3 +49,4 @@ The following figure shows that the evaluation of AI-composed music is highly co
 * https://audio.dev/
 * https://mtg.github.io/JAAH/
 * http://pcm.sapp.org/timeline/
+* http://www.computermusic.org/page/23/
