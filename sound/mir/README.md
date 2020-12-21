@@ -20,16 +20,20 @@ The following figure shows that the evaluation of AI-composed music is highly co
 
 ## Todos
 
-- [ ] Smarter everyday Fourier series
-- [ ] Spectrogram
-- [ ] Key-scape
+- [x] Smarter everyday Fourier series
+- [x] Spectrogram
+- [ ] Keyscape
 - [ ] Scape plot
 - [ ] Inner metric analysis
 
 ## References
 * https://www.sonicvisualiser.org/
+* https://vamp-plugins.org/index.html
+* https://www.justinsalamon.com/melody-extraction.html
+* http://www.isophonics.net/nnls-chroma
 * http://jmir.sourceforge.net/manuals/jSymbolic_manual/home.html
 * https://github.com/dmcennis/jaudioGIT
+* http://jaudio.sourceforge.net/jaudio10/features/feature.html
 * http://jmir.sourceforge.net/ACE.html
 * http://jmir.sourceforge.net/
 * https://mathworld.wolfram.com/WallpaperGroups.html
@@ -43,3 +47,10 @@ The following figure shows that the evaluation of AI-composed music is highly co
 * https://www.audiolabs-erlangen.de/fau/professor/mueller/notebookFMP
 * https://juce.com/discover/stories/adc-2020
 * https://audio.dev/
+* https://mtg.github.io/JAAH/
+* http://pcm.sapp.org/timeline/
+* http://www.computermusic.org/page/23/
+* https://github.com/bzamecnik/midi2audio
+* https://musescore.org/en/handbook/soundfonts-and-sfz-files#list
+* https://github.com/zwaltman/keyedin
+* https://imslp.org/wiki/Prelude_and_Fugue_in_A_minor,_BWV_865_(Bach,_Johann_Sebastian)

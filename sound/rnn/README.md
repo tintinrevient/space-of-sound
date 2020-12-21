@@ -12,3 +12,4 @@
 * http://abcnotation.com/software#AbcConverter
 * https://wiki.python.org/moin/PythonInMusic
 * https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+* https://keras.io/examples/
