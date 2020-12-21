@@ -32,4 +32,5 @@
 ## References
 * http://extras.humdrum.org/man/mkeyscape/wtc/
 * https://github.com/zwaltman/keyedin
+* https://github.com/stevetjoa/musicsearch
 * https://en.wikipedia.org/wiki/Circle_of_fifths
