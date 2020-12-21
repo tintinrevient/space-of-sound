@@ -2,7 +2,7 @@
 
 ## Todos
 - [ ] Minor key colors
-- [ ] Scale profile 
+- [ ] Krumhansl-Schmuckler key-finding: scale profile?
 - [ ] Raw audio has lower accuracy?
 
 ## Key colors
