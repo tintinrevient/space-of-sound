@@ -22,7 +22,7 @@ The following figure shows that the evaluation of AI-composed music is highly co
 
 - [x] Smarter everyday Fourier series
 - [x] Spectrogram
-- [ ] Keyscape
+- [x] Keyscape
 - [ ] Scape plot
 - [ ] Inner metric analysis
 
