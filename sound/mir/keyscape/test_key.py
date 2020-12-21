@@ -22,13 +22,13 @@ color_map = cm.get_cmap('rainbow', N)
 # [0. 0.16666667 0.33333333 0.5 0.66666667 0.83333333 1.]
 Y = np.linspace(0, 1, N)
 
-# Y[0] - Purple
-# Y[1] - Indigo
-# Y[2] - Blue
-# Y[3] - Green
-# Y[4] - Yellow
-# Y[5] - Orange
-# Y[6] - Red
+# Y[0] - Purple - A
+# Y[1] - Indigo - D
+# Y[2] - Blue - G
+# Y[3] - Green - C
+# Y[4] - Yellow - F
+# Y[5] - Orange - B
+# Y[6] - Red - E
 
 # circle of fifths
 KEY_COLOR_DICT = {
@@ -288,7 +288,7 @@ if __name__ == '__main__':
     # Fugue No. 20 in A minor, BWV 865
     # Fugue No. 21 in B♭ major, BWV 866
     # fname = './data/fugue_a_minor_bwv865.wav'
-    fname = './data/fugue_c_major_bwv846.wav'
+    fname = './data/looperman-swing-piano.wav'
 
     # Use naive Bayes classifier to guess the key
     naive_bayes = NaiveBayes()
@@ -362,7 +362,7 @@ if __name__ == '__main__':
     im = ax.imshow(X_SPANNED, cmap=color_map, vmin=0, vmax=1)
     plt.colorbar(im)
     plt.show()
-    fig.savefig('./pix/BWV846.png', dpi=fig.dpi)
+    fig.savefig('./pix/swing.png', dpi=fig.dpi)
 
 
 
