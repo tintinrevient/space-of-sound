@@ -216,7 +216,48 @@ sound(y, fs);
 audiowrite('NSynthTryOutTwinPeaks.wav', y, fs);
 ```
 
+### FFT
+
+```
+f = 4000;
+fs = 22050;
+fftLength = 1024; % window length
+
+x = sin(2*pi*f*[0:1/fs:1]); % make the sine wave
+ft = fft(x, fftLength); % do FFT, use rect. window
+ftMag = abs(ft); % compute magnitude
+
+% plot the results both in linear and dB magnitudes
+subplot(2, 1, 1), plot(ftMag);
+title('Linear Magnitude'), ylabel('magnitude'), xlabel('bins');
+
+subplot(2, 1, 2), plot(20*log10(ftMag));
+title('dB Magnitude'), ylabel('dB'), xlabel('bins');
+```
+
+<p float="left">
+	<img src="./pix/fft.jpg" width=400 />
+</p>
+
+### STFT
+
+```
+[x, fs] = audioread('NSynthTryOut.wav'); % load an audio file
+
+stft(x(:,1),fs,'Window',kaiser(256,5),'OverlapLength',220,'FFTLength',512); % plot 1
+
+[S,F,T] = stft(x,fs,'Window',hamming(128,'periodic'),'OverlapLength',50); % plot 2
+waterfall(F,T,abs(S(:,:,1))')
+helperGraphicsOpt(1)
+```
+
+<p float="left">
+	<img src="./pix/stft_2.jpg" width=400 />
+    <img src="./pix/stft_1.jpg" width=400 />
+</p>
+
 ## References
 * https://www.sfu.ca/~truax/river.html
 * https://en.wikipedia.org/wiki/Chebyshev_polynomials
 * https://nl.mathworks.com/help/symbolic/chebyshevt.html
+* https://nl.mathworks.com/help/signal/ref/stft.html
