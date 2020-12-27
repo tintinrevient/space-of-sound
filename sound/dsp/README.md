@@ -264,7 +264,7 @@ helperGraphicsOpt(1)
 
 fft_x = fft(x, 5292000);
 fft_y = fft(y, 5292000);
-ft_xy = fft_x .* fft_y;
+fft_xy = fft_x .* fft_y;
 reverb = ifft(fft_xy);
 
 audiowrite('NSynthTryOutReverb.wav', reverb, fs);
