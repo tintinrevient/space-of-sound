@@ -256,8 +256,24 @@ helperGraphicsOpt(1)
     <img src="./pix/stft_1.jpg" width=400 />
 </p>
 
+### Convolution for impulse response
+
+```
+[x, fs] = audioread('NSynthTryOut.wav'); 
+[y, sr] = audioread('1st_baptist_nashville_balcony.wav');
+
+fft_x = fft(x, 5292000);
+fft_y = fft(y, 5292000);
+ft_xy = fft_x .* fft_y;
+reverb = ifft(fft_xy);
+
+audiowrite('NSynthTryOutReverb.wav', reverb, fs);
+```
+
 ## References
 * https://www.sfu.ca/~truax/river.html
 * https://en.wikipedia.org/wiki/Chebyshev_polynomials
 * https://nl.mathworks.com/help/symbolic/chebyshevt.html
 * https://nl.mathworks.com/help/signal/ref/stft.html
+* https://nl.mathworks.com/help/matlab/ref/transpose.html
+* https://nl.mathworks.com/help/matlab/ref/ifft.html
