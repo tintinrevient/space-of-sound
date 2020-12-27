@@ -23,7 +23,7 @@ The following figure shows that the evaluation of AI-composed music is highly co
 - [x] Smarter everyday Fourier series
 - [x] Spectrogram
 - [x] Keyscape
-- [ ] Scape plot
+- [x] Fitness scape plot
 - [ ] Inner metric analysis
 
 ## References
@@ -54,3 +54,5 @@ The following figure shows that the evaluation of AI-composed music is highly co
 * https://musescore.org/en/handbook/soundfonts-and-sfz-files#list
 * https://github.com/zwaltman/keyedin
 * https://imslp.org/wiki/Prelude_and_Fugue_in_A_minor,_BWV_865_(Bach,_Johann_Sebastian)
+* https://github.com/slSeanWU/MusDr
+* https://soundcloud.com/electroswing
