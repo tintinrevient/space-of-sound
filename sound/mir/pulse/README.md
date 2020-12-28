@@ -1,6 +1,7 @@
 # Pulse
 
 ## Onset
+
 <p float="left">
     <img src="./pix/onset.png" width="800" />
 </p>
