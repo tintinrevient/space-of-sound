@@ -22,6 +22,12 @@ python run_scapeplot.py -a data/audio -s data/ssm -p data/scplot -j 2
 python vis_scapeplot.py -p data/scplot -f data/scfig 
 ```
 
+## Result
+
+<p float="left">
+    <img src="./data/scfig/130_Dr_Frenesy_fitness.png" width=800 />
+</p>
+
 ## References
 * https://github.com/slSeanWU/MusDr
 * https://soundcloud.com/electroswing
