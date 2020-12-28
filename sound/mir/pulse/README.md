@@ -1,5 +1,10 @@
 # Pulse
 
+## Result
+<p float="left">
+    <img src="./pix/onset.png" width="600" />
+</p>
+
 ## References
 * https://pysoundfile.readthedocs.io/en/latest/index.html#soundfile.write
 * https://librosa.org/doc/latest/generated/librosa.onset.onset_strength.html
