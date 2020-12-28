@@ -2,7 +2,7 @@
 
 ## Result
 <p float="left">
-    <img src="./pix/onset.png" width="600" />
+    <img src="./pix/onset.png" width="800" />
 </p>
 
 ## References
