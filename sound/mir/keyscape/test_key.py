@@ -287,7 +287,7 @@ if __name__ == '__main__':
 
     # Fugue No. 20 in A minor, BWV 865
     # Fugue No. 21 in B♭ major, BWV 866
-    # fname = './data/fugue_a_minor_bwv865.wav'
+    fname = './data/fugue_a_minor_bwv865.wav'
     fname = './data/looperman-swing-piano.wav'
 
     # Use naive Bayes classifier to guess the key
@@ -363,6 +363,3 @@ if __name__ == '__main__':
     plt.colorbar(im)
     plt.show()
     fig.savefig('./pix/swing.png', dpi=fig.dpi)
-
-
-

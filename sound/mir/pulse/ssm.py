@@ -14,6 +14,7 @@ chroma_stack = librosa.feature.stack_memory(chroma, n_steps=10, delay=3)
 
 # Default
 R = librosa.segment.recurrence_matrix(chroma_stack)
+R_lag = librosa.segment.recurrence_to_lag(R)
 
 # Or fix the number of nearest neighbors to 5
 # R = librosa.segment.recurrence_matrix(chroma_stack, k=5)

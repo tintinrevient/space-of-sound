@@ -31,5 +31,6 @@
 * https://www.christiansteinmetz.com/projects-blog/neuralreverberator
 * https://www.openairlib.net/
 * http://isophonics.net/content/room-impulse-response-data-set
+* http://isophonics.net/content/reference-annotations
 * https://docs.scipy.org/doc/scipy/reference/signal.html
 * https://nl.mathworks.com/help/audio/ref/audiotestbench-app.html

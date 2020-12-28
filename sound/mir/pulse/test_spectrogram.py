@@ -36,8 +36,13 @@ ax[2].set(title='Mel to STFT spectrogram')
 
 plt.show()
 
+# griffin lim
 y_stft = librosa.griffinlim(S)
 sf.write('./output/griffinlim_stft.wav', y_stft, sr)
 
 y_mel = librosa.griffinlim(M)
 sf.write('./output/griffinlim_mel.wav', y_mel, sr)
+
+# D = librosa.stft(y)
+# Dh, Dp = librosa.decompose.hpss(D)
+# y_harmonic = librosa.istft(Dh)
