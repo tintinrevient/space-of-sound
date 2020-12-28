@@ -25,7 +25,7 @@ python vis_scapeplot.py -p data/scplot -f data/scfig
 ## Result
 
 <p float="left">
-    <img src="./data/scfig/130_Dr_Frenesy_fitness.png" width=800 />
+    <img src="./pix/130_Dr_Frenesy_fitness.png" width=800 />
 </p>
 
 ## References
