@@ -1,8 +1,22 @@
 # Pulse
 
-## Result
+## Onset
 <p float="left">
-    <img src="./pix/onset.png" width="600" />
+    <img src="./pix/onset.png" width="800" />
+</p>
+
+## Self Similarity Matrix (SSM)
+
+### Swing piano
+
+<p float="left">
+    <img src="./pix/ssm_swing.png" width="800" />
+</p>
+
+### NSynth music
+
+<p float="left">
+    <img src="./pix/ssm_nsynth.png" width="800" />
 </p>
 
 ## References
