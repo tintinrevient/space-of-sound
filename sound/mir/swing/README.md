@@ -8,6 +8,13 @@ After being transposed to C major / minor, the pitch distribution of Jazz pianos
     <img src="./plots/jazz_pianos_top_5_tags_c_pitch_distribution.png" width=800 />
 </p>
 
+## Pitch class distribution
+
+After being transposed to C major / minor, the pitch class distribution of Jazz pianos is as below:
+
+<p float="left">
+    <img src="./plots/jazz_pianos_top_5_tags_c_pitch_class_distribution.png" width=800 />
+</p>
 
 ## Prerequisites
 ```bash

@@ -91,6 +91,55 @@ def plot_pitch_distribution(indir, outfile):
     # Display the figure for the testing
     # plt.show()
 
+
+def plot_pitch_class_distribution(indir, outfile):
+
+    # Initialize the pitch class labels of all 12 classes
+    pitch_class_labels = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B']
+
+    # Initialize the pitch class histogram
+    pitch_class_hist = np.zeros(12)
+
+    for infile in glob.glob(os.path.join(indir, '*.mid')):
+
+        print('Infile:', infile)
+
+        try:
+            # Get the midi data
+            midi_data = pretty_midi.PrettyMIDI(infile)
+
+            for instrument in midi_data.instruments:
+                # Only piano
+                if not instrument.is_drum and len(midi_data.instruments) == 1:
+                    num_of_notes = len(instrument.notes)
+                    midi_data_pitch_class_hist = midi_data.get_pitch_class_histogram()
+                    midi_data_pitch_class_hist = midi_data_pitch_class_hist * num_of_notes
+
+            # Update the pitch class histogram
+            pitch_class_hist = pitch_class_hist + np.array(midi_data_pitch_class_hist)
+
+        except:
+            # mido.midifiles.meta.KeySignatureError: Could not decode key with 10 flats and mode 0
+            pass
+
+    # Histogram
+    plt.bar(np.arange(12), pitch_class_hist);
+    plt.xticks(np.arange(12), pitch_class_labels, rotation='vertical')
+    plt.xlabel('Pitch Class')
+    plt.ylabel('Proportion')
+    plt.subplots_adjust(bottom=0.15)
+
+    # Get current figure
+    figure = plt.gcf()
+    # Set the ratio
+    figure.set_size_inches(16, 9)
+
+    # Save the figure
+    plt.savefig(outfile, dpi=100)
+    # Display the figure for the testing
+    # plt.show()
+
+
 if __name__ == '__main__':
 
     # Musescore: 64 files
@@ -105,15 +154,20 @@ if __name__ == '__main__':
 
     # Jazz pianos top 5: 739 files
     # indir = os.path.join('midis_final_selection', 'jazz_pianos_top_5_tags')
-    # outdir = os.path.join('midis_final_selection', 'jazz_pianos_top_5_tags_c')
-    # outfile = os.path.join('plots', 'jazz_pianos_top_5_tags_c_pitch_distribution.png')
+    outdir = os.path.join('midis_final_selection', 'jazz_pianos_top_5_tags_c')
+    outfile_pitch = os.path.join('plots', 'jazz_pianos_top_5_tags_c_pitch_distribution.png')
+    outfile_pitch_class = os.path.join('plots', 'jazz_pianos_top_5_tags_c_pitch_class_distribution.png')
 
     # Musescore: 64 files + Swing pianos: 53 files = 117 files
-    outdir = outdir = os.path.join('midis_final_selection', 'swing_pianos_c')
-    outfile = os.path.join('plots', 'swing_pianos_c_pitch_distribution.png')
+    # outdir = os.path.join('midis_final_selection', 'swing_pianos_c')
+    # outfile_pitch = os.path.join('plots', 'swing_pianos_c_pitch_distribution.png')
+    # outfile_pitch_class = os.path.join('plots', 'swing_pianos_c_pitch_class_distribution.png')
 
     # Step 1 - Transpose to C
     # transpose_to_c(indir=indir, outdir=outdir)
 
     # Step 2 - Plot the pitch distribution
-    plot_pitch_distribution(indir=outdir, outfile=outfile)
+    # plot_pitch_distribution(indir=outdir, outfile=outfile_pitch)
+
+    # Step 3 - Plot the pitch class distribution
+    plot_pitch_class_distribution(indir=outdir, outfile=outfile_pitch_class)
