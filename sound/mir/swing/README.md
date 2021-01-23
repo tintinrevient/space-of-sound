@@ -16,6 +16,23 @@ After being transposed to C major / minor, the pitch class distribution of Jazz 
     <img src="./plots/jazz_pianos_top_5_tags_c_pitch_class_distribution.png" width=800 />
 </p>
 
+## Mode distribution
+
+Before being transposed to C major / minor, the original mode distribution of Swing pianos is as below:
+
+<p float="left">
+    <img src="./plots/swing_pianos_mode_distribution.png" width=800 />
+</p>
+
+## Meter distribution
+
+The meter distribution of Swing pianos is as below:
+
+<p float="left">
+    <img src="./plots/swing_pianos_meter_distribution.png" width=800 />
+</p>
+
+
 ## Prerequisites
 ```bash
 brew install unrar
