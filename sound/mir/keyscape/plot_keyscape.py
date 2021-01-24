@@ -1,6 +1,7 @@
 import numpy as np
 import librosa
-import matplotlib
+from colour import Color
+from matplotlib.colors import LinearSegmentedColormap
 from matplotlib import pyplot as plt
 import music21
 import pretty_midi
@@ -19,70 +20,113 @@ MINOR_SCALE_PROFILE = [0.16, 0.03, 0.09, 0.13, 0.03, 0.10, 0.06, 0.14, 0.11, 0.0
 
 
 # Customized color map
-cdict = {'red': ((0.0, 0.0, 0.0),
-                 (0.1, 0.5, 0.5),
-                 (0.2, 0.0, 0.0),
-                 (0.4, 0.2, 0.2),
-                 (0.6, 0.0, 0.0),
-                 (0.8, 1.0, 1.0),
-                 (1.0, 1.0, 1.0)),
-        'green':((0.0, 0.0, 0.0),
-                 (0.1, 0.0, 0.0),
-                 (0.2, 0.0, 0.0),
-                 (0.4, 1.0, 1.0),
-                 (0.6, 1.0, 1.0),
-                 (0.8, 1.0, 1.0),
-                 (1.0, 0.0, 0.0)),
-        'blue': ((0.0, 0.0, 0.0),
-                 (0.1, 0.5, 0.5),
-                 (0.2, 1.0, 1.0),
-                 (0.4, 1.0, 1.0),
-                 (0.6, 0.0, 0.0),
-                 (0.8, 0.0, 0.0),
-                 (1.0, 0.0, 0.0))}
+light_rose = '#FF00B2'
+dark_rose = '#CC008F'
+light_rose_code = 0.0
+dark_rose_code = 0.05
 
-my_cmap = matplotlib.colors.LinearSegmentedColormap('my_colormap', cdict, 256)
+light_magenta = '#FF00FF'
+dark_magenta = '#FF00FF'
+light_magenta_code = 0.11
+dark_magenta_code = 0.14
 
-light_purple = 0.1
-dark_purple = 0.07
+light_violet = '#7B00FF'
+dark_violet = '#6300CC'
+light_violet_code = 0.17
+dark_violet_code = 0.2
 
-light_indigo = 0.2
-dark_indigo = 0.17
+light_blue = '#0000FF'
+dark_blue = '#0000CC'
+light_blue_code = 0.32
+dark_blue_code = 0.3
 
-light_blue = 0.4
-dark_blue = 0.37
+light_azure = '#0055FF'
+dark_azure = '#0044CC'
+light_azure_code = 0.39
+dark_azure_code = 0.38
 
-light_green = 0.6
-dark_green = 0.7
+light_cyan = '#00FFFF'
+dark_cyan = '#00CCCC'
+light_cyan_code = 0.42
+dark_cyan_code = 0.45
 
-light_yellow = 0.8
-dark_yellow = 0.77
+light_spring = '#00FF88'
+dark_spring = '#00CC6D'
+light_spring_code = 0.5
+dark_spring_code = 0.53
 
-light_orange = 0.85
-dark_orange = 0.88
+light_green = '#00FF00'
+dark_green = '#00CC00'
+light_green_code = 0.6
+dark_green_code = 0.62
 
-light_red = 0.96
-dark_red = 1
+light_chartreuse = '#6EFF00'
+dark_chartreuse = '#58CC00'
+light_chartreuse_code = 0.70
+dark_chartreuse_code = 0.72
 
-no_key = 0
+light_yellow = '#FFFF00'
+dark_yellow = '#CCCC00'
+light_yellow_code = 0.75
+dark_yellow_code = 0.78
+
+light_orange = '#FF9100'
+dark_orange = '#E68200'
+light_orange_code = 0.83
+dark_orange_code = 0.87
+
+light_red = '#FF0000'
+dark_red = '#CC0000'
+light_red_code = 0.92
+dark_red_code = 0.95
+
+black = '#000000'
+black_code = 1.0
+
+ramp_colors = [light_rose, dark_rose, light_magenta, dark_magenta, light_violet, dark_violet, light_blue, dark_blue,
+               light_azure, dark_azure, light_cyan, dark_cyan, light_spring, dark_spring, light_green, dark_green,
+               light_chartreuse, dark_chartreuse, light_yellow, dark_yellow, light_orange, dark_orange, light_red,
+               dark_red, black]
+
+my_cmap = LinearSegmentedColormap.from_list( 'my_cmap', [Color(color).rgb for color in ramp_colors])
 
 # circle of fifths
 KEY_COLOR_DICT = {
-    'A MAJOR': light_purple,
-    'A MINOR': dark_purple,
-    'B MAJOR': light_orange,
-    'B MINOR': dark_orange,
-    'C MAJOR': light_green,
-    'C MINOR': dark_green,
-    'D MAJOR': light_indigo,
-    'D MINOR': dark_indigo,
-    'E MAJOR': light_red,
-    'E MINOR': dark_red,
-    'F MAJOR': light_yellow,
-    'F MINOR': dark_yellow,
-    'G MAJOR': light_blue,
-    'G MINOR': dark_blue,
-    'NULL': no_key
+    'A MAJOR': light_green_code,
+    'A MINOR': dark_green_code,
+    'A# MAJOR': light_spring_code,
+    'A# MINOR': dark_spring_code,
+    'B- MAJOR': light_spring_code,
+    'B- MINOR': dark_spring_code,
+    'B MAJOR': light_cyan_code,
+    'B MINOR': dark_cyan_code,
+    'C MAJOR': light_azure_code,
+    'C MINOR': dark_azure_code,
+    'C# MAJOR': light_blue_code,
+    'C# MINOR': dark_blue_code,
+    'D- MAJOR': light_blue_code,
+    'D- MINOR': dark_blue_code,
+    'D MAJOR': light_violet_code,
+    'D MINOR': dark_violet_code,
+    'D# MAJOR': light_magenta_code,
+    'D# MINOR': dark_magenta_code,
+    'E- MAJOR': light_magenta_code,
+    'E- MINOR': dark_magenta_code,
+    'E MAJOR': light_rose_code,
+    'E MINOR': dark_rose_code,
+    'F MAJOR': light_red_code,
+    'F MINOR': dark_red_code,
+    'F# MAJOR': light_orange_code,
+    'F# MINOR': dark_orange_code,
+    'G- MAJOR': light_orange_code,
+    'G- MINOR': dark_orange_code,
+    'G MAJOR': light_yellow_code,
+    'G MINOR': dark_yellow_code,
+    'G# MAJOR': light_chartreuse_code,
+    'G# MINOR': dark_chartreuse_code,
+    'A- MAJOR': light_chartreuse_code,
+    'A- MINOR': dark_chartreuse_code,
+    'NULL': black_code
 }
 
 
@@ -367,7 +411,7 @@ def plot_keyscape_from_audio(infile):
             key = krumhansl_schmuckler.get_key(dist)
             print("Estimated key:", key)
 
-            key_str = str(key).upper().replace('#', '').replace('-', '')
+            key_str = str(key).upper()
             print("Adjusted key:", key_str)
 
             key_cm_value = KEY_COLOR_DICT[key_str]
@@ -395,7 +439,16 @@ def plot_keyscape_from_audio(infile):
     fig = plt.figure()
     ax = fig.add_subplot(111)
     im = ax.imshow(X_SPANNED, cmap=my_cmap, vmin=0, vmax=1)
-    plt.colorbar(im)
+
+    cbar = plt.colorbar(im)
+    cbar.ax.get_yaxis().set_ticks([])
+    for j, lab in enumerate(['     E Major', '     E Minor', '     D# Major', '     D# Minor', '     D Major',
+                             '     D Minor', '     C# Major', '     C# Minor', '     C Major', '     C Minor',
+                             '     B Major', '     B Minor', '     A# Major', '     A# Minor', '     A Major',
+                             '     A Minor', '     G# Major', '     G# Minor', '     G Major', '     G Minor',
+                             '     F# Major', '     F# Minor', '     F Major', '     F Minor', '     NULL']):
+        cbar.ax.text(0., j / 25, lab, ha='left', va='bottom')
+
     plt.show()
     fig.savefig('./pix/Chambermaid_Swing_Audio.png', dpi=fig.dpi)
 
@@ -594,14 +647,14 @@ def plot_keyscape_from_midi(infile, source_folder):
                 key = str(score.analyze('key'))
                 print("Estimated key:", key)
 
-                key_str = str(key).upper().replace('#', '').replace('-', '')
+                key_str = str(key).upper()
                 print("Adjusted key:", key_str)
 
             except:
                 key_str = 'NULL'
 
             key_cm_value = KEY_COLOR_DICT[key_str]
-            # print("Key color value:", key_cm_value)
+            print("Key color value:", key_cm_value)
 
             start_index = segment_index * step
             end_index = start_index + step
@@ -625,7 +678,16 @@ def plot_keyscape_from_midi(infile, source_folder):
     fig = plt.figure()
     ax = fig.add_subplot(111)
     im = ax.imshow(X_SPANNED, cmap=my_cmap, vmin=0, vmax=1)
-    plt.colorbar(im)
+
+    cbar = plt.colorbar(im)
+    cbar.ax.get_yaxis().set_ticks([])
+    for j, lab in enumerate(['     E Major', '     E Minor', '     D# Major', '     D# Minor', '     D Major',
+                             '     D Minor', '     C# Major', '     C# Minor', '     C Major', '     C Minor',
+                             '     B Major', '     B Minor', '     A# Major', '     A# Minor', '     A Major',
+                             '     A Minor', '     G# Major', '     G# Minor', '     G Major', '     G Minor',
+                             '     F# Major', '     F# Minor', '     F Major', '     F Minor', '     NULL']):
+        cbar.ax.text(0., j/25, lab, ha='left', va='bottom')
+
     plt.show()
     fig.savefig('./pix/Chambermaid_Swing.png', dpi=fig.dpi)
 

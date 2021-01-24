@@ -62,3 +62,4 @@ xcrun make
 * https://github.com/zwaltman/keyedin
 * https://github.com/stevetjoa/musicsearch
 * https://en.wikipedia.org/wiki/Circle_of_fifths
+* https://www.rapidtables.com/web/color/color-wheel.html
