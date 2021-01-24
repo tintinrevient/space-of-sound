@@ -11,7 +11,7 @@
     <img src="./pix/default-colormap.png" width=400 />
 </p>
 
-## Result from audio
+## Result of Fugue
 
 <p>
     <em>Fugue No. 1 in C major, BWV 846</em>
@@ -29,7 +29,7 @@
     <img src="./pix/BWV866.png" width=400 />
 </p>
 
-## Result from MIDI
+## Result of Electro Swing
 
 <p>
     <em>Chambermaid Swing from Parov Stelar - Left: MIDI file, Right: WAV file</em>
