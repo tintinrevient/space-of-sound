@@ -39,9 +39,26 @@
     <img src="./pix/Chambermaid_Swing_Audio.png" width=400 />
 </p>
 
+## Setup
+
+You do not need Xcode, you can install only the Command Line Tools here, it is about 130Mb.
+```bash
+xcode-select --install
+```
+
+Then the following command works.
+```bash
+make
+```
+
+```bash
+xcrun make
+```
+
 ## References
 * http://extras.humdrum.org/man/mkeyscape/wtc/
 * http://extras.humdrum.org/man/mkeyscape/index.html#l_option
+* http://extras.humdrum.org/download/
 * https://github.com/zwaltman/keyedin
 * https://github.com/stevetjoa/musicsearch
 * https://en.wikipedia.org/wiki/Circle_of_fifths
