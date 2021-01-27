@@ -31,3 +31,4 @@ python vis_scapeplot.py -p data/scplot -f data/scfig
 ## References
 * https://github.com/slSeanWU/MusDr
 * https://soundcloud.com/electroswing
+* https://www.audiolabs-erlangen.de/resources/MIR/FMP/C4/C4S3_ScapePlot.html
