@@ -1,5 +1,14 @@
 # Sound
 
+## HPC
+* https://github.com/OceanParcels/UtrechtTeam/wiki/How-to-run-parcels-on-gemini-and-cartesius
+* https://hpc.op.umcutrecht.nl/
+* https://wiki.bioinformatics.umcutrecht.nl/HPC
+* https://wiki.bioinformatics.umcutrecht.nl/bin/view/HPC/FirstTimeUsers
+* https://wiki.bioinformatics.umcutrecht.nl/bin/view/HPC/HowToS
+* https://drive.google.com/drive/folders/0B1UNon8v26XsV2xJQ3J3ekVXWlU
+* https://wiki.bioinformatics.umcutrecht.nl/pub/HPC/FirstTimeUsers/pi_in_python.pdf
+
 ## References
 * https://interactiveaudiolab.github.io/
 * https://pypi.org/project/miditk-smf/
