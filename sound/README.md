@@ -8,6 +8,10 @@
 ## HPC
 
 ```bash
+sbatch -p gpu --gres=tmpspace:50G --time 48:00:00 train.sh
+```
+
+```bash
 srun -p gpu --gres=tmpspace:50G --gpus-per-node=RTX2080Ti:1 --time 6:00:00 --pty bash
 srun -p gpu --gres=tmpspace:50G --gpus-per-node=TeslaV100:1 --time 02:00:00 --mem 100G --pty bash
 
