@@ -2,7 +2,7 @@
 
 ## Magenta
 * https://github.com/magenta/magenta/tree/master/magenta/models/music_vae
-* https://colab.research.google.com/github/magenta/magenta-demos/blob/master/colab-notebooks/MusicVAE.ipynb#scrollTo=0x8YTRDwv8Gk
+* https://colab.research.google.com/github/magenta/magenta-demos/blob/master/colab-notebooks/MusicVAE.ipynb
 * https://notebook.community/magenta/magenta-demos/colab-notebooks/MusicVAE
 
 ## HPC
