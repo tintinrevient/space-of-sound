@@ -6,6 +6,12 @@
 * https://notebook.community/magenta/magenta-demos/colab-notebooks/MusicVAE
 
 ## HPC
+
+```bash
+srun -p gpu --gpus-per-node=RTX2080Ti:1 --pty bash
+sbatch -p gpu --gpus-per-node=RTX2080Ti:1 --time=24:00:00 train.sh
+```
+
 * https://github.com/OceanParcels/UtrechtTeam/wiki/How-to-run-parcels-on-gemini-and-cartesius
 * https://hpc.op.umcutrecht.nl/
 * https://wiki.bioinformatics.umcutrecht.nl/HPC
