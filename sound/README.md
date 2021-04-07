@@ -9,8 +9,9 @@
 
 ```bash
 srun -p gpu --gres=tmpspace:50G --gpus-per-node=RTX2080Ti:1 --time 6:00:00 --pty bash
-sbatch -p gpu -c 2 --gres=tmpspace:10G --gpus-per-node=RTX2080Ti:1 --time 48:00:00 --mem 100G train.sh
 srun -p gpu --gres=tmpspace:50G --gpus-per-node=TeslaV100:1 --time 02:00:00 --mem 100G --pty bash
+
+sbatch -p gpu -c 2 --gres=tmpspace:50G --gpus-per-node=RTX2080Ti:1 --time 48:00:00 --mem 100G train.sh
 ```
 
 * https://github.com/OceanParcels/UtrechtTeam/wiki/How-to-run-parcels-on-gemini-and-cartesius
