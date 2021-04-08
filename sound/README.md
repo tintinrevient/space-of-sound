@@ -20,6 +20,7 @@ sbatch -p gpu -c 2 --gres=tmpspace:50G --gpus-per-node=RTX2080Ti:1 --time 48:00:
 
 * https://github.com/OceanParcels/UtrechtTeam/wiki/How-to-run-parcels-on-gemini-and-cartesius
 * https://hpc.op.umcutrecht.nl/
+* https://hpc.op.umcutrecht.nl/pun/sys/dashboard
 * https://wiki.bioinformatics.umcutrecht.nl/HPC
 * https://wiki.bioinformatics.umcutrecht.nl/bin/view/HPC/FirstTimeUsers
 * https://wiki.bioinformatics.umcutrecht.nl/bin/view/HPC/HowToS
