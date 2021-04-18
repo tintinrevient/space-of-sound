@@ -44,6 +44,10 @@ tf.test.is_gpu_available(
 )
 ```
 
+```bash
+lspci
+```
+
 * https://www.tensorflow.org/api_docs/python/tf/test/is_gpu_available
 
 ## References
