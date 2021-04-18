@@ -1,23 +1,27 @@
 # Sound
 
 ## Magenta
+
 * https://github.com/magenta/magenta/tree/master/magenta/models/music_vae
 * https://colab.research.google.com/github/magenta/magenta-demos/blob/master/colab-notebooks/MusicVAE.ipynb
 * https://notebook.community/magenta/magenta-demos/colab-notebooks/MusicVAE
 
 ## HPC
 
+* RTX2080Ti
+* RTX6000
+* TeslaV100
+* TeslaP100
+
 ```bash
-sbatch -p gpu --gres=tmpspace:50G --time 48:00:00 train.sh
+sbatch -p gpu --gres=tmpspace:50G --gpus-per-node=RTX6000:1 --time 48:00:00 --mem 50G train16.sh
 ```
 
 ```bash
-srun -p gpu --gres=tmpspace:50G --gpus-per-node=RTX2080Ti:1 --time 6:00:00 --pty bash
-srun -p gpu --gres=tmpspace:50G --gpus-per-node=TeslaV100:1 --time 02:00:00 --mem 100G --pty bash
+srun -p gpu -c 2 --gres=tmpspace:50G --gpus-per-node=TeslaV100:1 --time 02:00:00 --mem 100G --pty bash
+```
 
-sbatch -p gpu -c 2 --gres=tmpspace:50G --gpus-per-node=RTX2080Ti:1 --time 48:00:00 --mem 100G train.sh
-sbatch -p gpu --gres=tmpspace:50G --gpus-per-node=RTX6000:1 --time 48:00:00 --mem 50G train16.sh
-
+```bash
 squeue -u szhao
 ```
 
@@ -29,6 +33,18 @@ squeue -u szhao
 * https://wiki.bioinformatics.umcutrecht.nl/bin/view/HPC/HowToS
 * https://drive.google.com/drive/folders/0B1UNon8v26XsV2xJQ3J3ekVXWlU
 * https://wiki.bioinformatics.umcutrecht.nl/pub/HPC/FirstTimeUsers/pi_in_python.pdf
+
+## Tensorflow
+
+```python
+import tensorflow as tf
+
+tf.test.is_gpu_available(
+    cuda_only=False, min_cuda_compute_capability=None
+)
+```
+
+* https://www.tensorflow.org/api_docs/python/tf/test/is_gpu_available
 
 ## References
 * https://interactiveaudiolab.github.io/
