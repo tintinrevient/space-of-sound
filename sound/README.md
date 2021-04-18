@@ -49,6 +49,7 @@ lspci
 ```
 
 * https://www.tensorflow.org/api_docs/python/tf/test/is_gpu_available
+* https://www.tensorflow.org/install/source#gpu
 
 ## References
 * https://interactiveaudiolab.github.io/
