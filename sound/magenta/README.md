@@ -52,3 +52,5 @@ lspci
 * https://colab.research.google.com/github/magenta/magenta-demos/blob/master/colab-notebooks/MusicVAE.ipynb
 * https://notebook.community/magenta/magenta-demos/colab-notebooks/MusicVAE
 * http://www.vgmusic.com/
+* https://github.com/gogson/node-vgmusic-downloader
+* https://github.com/timwedde/banana-split/tree/master/banana-split
