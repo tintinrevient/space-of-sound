@@ -54,3 +54,6 @@ lspci
 * http://www.vgmusic.com/
 * https://github.com/gogson/node-vgmusic-downloader
 * https://github.com/timwedde/banana-split/tree/master/banana-split
+* https://jukebox.openai.com/
+* https://colab.research.google.com/github/SMarioMan/jukebox/blob/master/jukebox/Interacting_with_Jukebox.ipynb
+* https://github.com/openai/jukebox/pull/72
